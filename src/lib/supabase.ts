@@ -4,7 +4,7 @@ const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
 if (!supabaseUrl || !supabaseAnonKey) {
-  console.error("Faltan las variables de entorno de Supabase en el .env");
+  console.error("⚠️ ERROR: Faltan las llaves en las variables de entorno");
 }
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
