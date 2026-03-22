@@ -1,0 +1,54 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/BaseLayout.astro';
+---
+
+<Layout title="Inicio | Distrito Mini 🧸">
+	<main class="min-h-screen bg-gradient-to-br from-emerald-50 to-slate-100 flex items-center justify-center p-6">
+		<div class="max-w-4xl w-full text-center">
+			
+			<div class="mb-8 inline-block p-6 bg-white rounded-full shadow-2xl animate-bounce">
+				<span class="text-6xl">🧸</span>
+			</div>
+
+			<h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-4 tracking-tight">
+				Distrito <span class="text-emerald-600">Mini</span>
+			</h1>
+			
+			<p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto font-medium">
+				Sistema de Gestión de Inventario y Punto de Venta para tu minimarket favorito. 🚀
+			</p>
+
+			<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+				
+				<a href="/pos" class="group relative w-full md:w-72 bg-emerald-500 hover:bg-emerald-600 text-white p-8 rounded-3xl shadow-xl shadow-emerald-500/30 transition-all transform hover:-translate-y-2 active:scale-95">
+					<div class="text-4xl mb-3">🛒</div>
+					<span class="block text-2xl font-black uppercase tracking-wider">Ir a Comprar</span>
+					<span class="text-emerald-100 text-sm opacity-80 font-bold">Punto de Venta</span>
+				</a>
+
+				<a href="/admin" class="group relative w-full md:w-72 bg-slate-900 hover:bg-black text-white p-8 rounded-3xl shadow-xl shadow-slate-900/30 transition-all transform hover:-translate-y-2 active:scale-95 border-2 border-slate-800">
+					<div class="text-4xl mb-3">⚙️</div>
+					<span class="block text-2xl font-black uppercase tracking-wider">Administrar</span>
+					<span class="text-slate-400 text-sm opacity-80 font-bold">Inventario y Usuarios</span>
+				</a>
+
+			</div>
+
+			<footer class="mt-20 text-slate-400 font-medium border-t pt-8">
+				<p>Distrito Mini © 2024 - Desarrollado con Astro y Supabase 🔥</p>
+			</footer>
+
+		</div>
+	</main>
+</Layout>
+
+<style>
+	/* Un toque de animación suave para los botones */
+	a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+	}
+</style>

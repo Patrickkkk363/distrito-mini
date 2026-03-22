@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AuthForm from '../components/AuthForm';
+---
+<BaseLayout title="Registro">
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="hidden md:flex flex-col justify-center items-start p-8 rounded-2xl bg-[var(--glass-bg)] border border-[var(--glass-border)]">
+        <h1 class="text-4xl font-extrabold mb-4">Crea tu cuenta</h1>
+        <p class="text-[var(--text-muted)]">Regístrate como Usuario Estándar (cajero) para gestionar ventas o pídele a un admin que cree tu cuenta con rol administrador.</p>
+        <div class="mt-6 text-sm text-[var(--text-muted)]">¿Ya tienes cuenta? <a href="/login" class="text-primary-500 font-bold">Inicia sesión</a></div>
+      </div>
+
+      <div class="p-6 flex items-center justify-center">
+        <AuthForm client:load mode="register" />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
